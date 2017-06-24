@@ -1,0 +1,32 @@
+~RControl::Suspend, Toggle
+$NumPad1::
+Loop 
+{
+  if not GetKeyState("$NumPad1", "P")
+    break
+  CoordMode, Pixel, Relative
+  PixelGetColor, color1, 1200, 1200
+  ifNotEqual, color1, 0x000000
+  {
+   SendInput {NumPad9} 
+  }
+  Send ${NumPad1} 
+  sleep 100
+}
+return
+
+$NumPad2::
+Loop 
+{
+  if not GetKeyState("$NumPad2", "P")
+    break
+  CoordMode, Pixel, Relative
+  PixelGetColor, color1, 1200, 1200
+  ifNotEqual, color1, 0x000000
+  {
+   SendInput {NumPad9} 
+  }
+  Send ${NumPad2} 
+  sleep 100
+}
+return

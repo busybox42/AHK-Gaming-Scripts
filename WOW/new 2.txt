@@ -1,0 +1,35 @@
+Sequences['VengDH'] = {
+-- This Sequence was exported from GSE 2.0.14.
+  Author="Unknown",
+  SpecID=581,
+  Talents = "2,3,1,3,1,1,1",
+  Helplink = "https://wowlazymacros.com/forums/topic/legion7-1-5-gse2-0-vengdh/",
+  Help = "Tank - Talents are 2313121",
+  Default=1,
+  Icon='ability_demonhunter_spectank',
+  MacroVersions = {
+    [1] = {
+      StepFunction = [[Sequential]],
+      KeyPress={
+        "/targetenemy [noharm][dead]",
+      },
+      PreMacro={
+      },
+        "/cast [nochanneling] Felblade",
+        "/castsequence [nochanneling] Shear, Soul Cleave",
+        "/cast [combat,nochanneling] Throw Glaive",
+        "/cast [combat,nochanneling] Shear",
+        "/cast Fel Devastation",
+        "/cast [nochanneling] Demon Spikes",
+        "/cast [nochanneling] Fiery Brand",
+        "/cast [nochanneling] Immolation Aura",
+        "/cast [nochanneling] Sigil of Flame",
+        "/cast [nochanneling] Sever",
+      PostMacro={
+      },
+      KeyRelease={
+        "/cast [nochanneling] Soul Carver",
+      },
+    },
+  },
+}

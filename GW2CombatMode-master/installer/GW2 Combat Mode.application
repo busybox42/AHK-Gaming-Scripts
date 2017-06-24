@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="GW2 Combat Mode.application" version="1.0.0.1" publicKeyToken="0a819c0acf584a97" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="GW2 Combat Mode" asmv2:product="GW2 Combat Mode" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="https://raw.github.com/eru-iluvatar/GW2CombatMode/master/installer/GW2%20Combat%20Mode.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\GW2 Combat Mode_1_0_0_1\GW2 Combat Mode.exe.manifest" size="16686">
+      <assemblyIdentity name="GW2 Combat Mode.exe" version="1.0.0.1" publicKeyToken="0a819c0acf584a97" language="neutral" processorArchitecture="msil" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>I5918kl4caD2FSD7MfVrC+abRAQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=Bob-DVL\Bob" issuerKeyHash="6b0ac74b7d1bdc9fdef73ce7dff4a0634e1976dc" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>NYU35ryjWGPJpHioifRbDPqqmXI=</DigestValue></Reference></SignedInfo><SignatureValue>svmJJUlv6sgLgRvSSvbb2+Bf5lFZs5sVnsdBkAMsAOwspQ+Ui+89n1H3KAffuaSlag1seCL/NzlD+3SMXiHuiLvmpD4UjcRCg7EqtTwIp/VXhDdHxRLH0Lmr7S4qZLdkP6UTWiVL0+RtMlLoZboQfQN4a1bMLs2z4See/JQ28Sk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wD93pKMRCPmrgoe9rlq40YfTigTqPYN8lamnL9vtA30TW+Nhc8yHzkm8VYcZILpASfXDYaNMHnJWkvJMOyiCRdta5G8mbCjSeR+8RzjS1dIFkC46xX3wzpYrxTGclxjdnNjbpfWJivslAM9ApyGm3pv/55l4sEph/UmGcXhcz5c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7299aafa0c5bf489a878a4c96358a3bce6378535" Description="" Url=""><as:assemblyIdentity name="GW2 Combat Mode.application" version="1.0.0.1" publicKeyToken="0a819c0acf584a97" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Bob-DVL\Bob</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ef2j0mlNxvXnoyDySKlGkviTNls=</DigestValue></Reference></SignedInfo><SignatureValue>M/1P17d4MWYB5YjA36ohZbRLJOIIEu2b7I8aSKeqBwmBxmU14OZv2+adoaTAZxhr08sHhfR8dzrAlbGkl1xluRfib0jJUZxJLVhW8AcUBjC33IN+fHS4vUor7ncEU7MIrWWlxR0HoRq+nBso7gMmqE/JxbM0X7CDiCtuFl9Nkjs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wD93pKMRCPmrgoe9rlq40YfTigTqPYN8lamnL9vtA30TW+Nhc8yHzkm8VYcZILpASfXDYaNMHnJWkvJMOyiCRdta5G8mbCjSeR+8RzjS1dIFkC46xX3wzpYrxTGclxjdnNjbpfWJivslAM9ApyGm3pv/55l4sEph/UmGcXhcz5c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQEt4BpHAVwahFYgM7nowDczANBgkqhkiG9w0BAQUFADAhMR8wHQYDVQQDHhYAQgBvAGIALQBEAFYATABcAEIAbwBiMB4XDTEyMTIxNTAyNTU1NloXDTEzMTIxNTA4NTU1NlowITEfMB0GA1UEAx4WAEIAbwBiAC0ARABWAEwAXABCAG8AYjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwD93pKMRCPmrgoe9rlq40YfTigTqPYN8lamnL9vtA30TW+Nhc8yHzkm8VYcZILpASfXDYaNMHnJWkvJMOyiCRdta5G8mbCjSeR+8RzjS1dIFkC46xX3wzpYrxTGclxjdnNjbpfWJivslAM9ApyGm3pv/55l4sEph/UmGcXhcz5cCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAsxelRspxUZzMQqqacQpvI7fjnj4nydOTIHlA+o8oDDWvrDWU53Ixz8/dFF7LnmY6gu2YGpNNvct2HWfu5hmW4GP75Q3QMCxNDJsDX80pFFXeUJjyxVdKpU+dqwGflzmKFYZ092fJOQ4zcgUTCBo0g6vri4b2S/41/Qx/50Sd54w==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

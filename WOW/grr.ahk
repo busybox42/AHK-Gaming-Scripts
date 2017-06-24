@@ -8,6 +8,13 @@ $NumPad4::
 	Loop 
 	{
 	click
-	sleep 5
+	sleep 100
 	}
+$NumPad7::
+	Loop 
+	{
+	click
+	sleep 500
+	SendInput 1
+	}	
 }

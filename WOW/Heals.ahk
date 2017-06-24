@@ -1,6 +1,7 @@
 
 Pause::Pause
 Xbutton2::Reload
+Xbutton1::ExitApp
 #MaxThreads 1
 #ifWinActive World of Warcraft 
 {	
@@ -14,7 +15,7 @@ Xbutton2::Reload
 			break
 		else	
 		{
-			PixelGetColor, color1, 1175, 868
+			PixelGetColor, color1, 689, 1009
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100
@@ -39,7 +40,7 @@ Xbutton2::Reload
 			break
 		else	
 		{
-			PixelGetColor, color1, 1175, 868
+			PixelGetColor, color1, 689, 1009
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100
@@ -61,7 +62,7 @@ $NumPad4::
 			break
 		else	
 		{
-			PixelGetColor, color1, 1175, 868
+			PixelGetColor, color1, 691, 1010
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100
@@ -83,7 +84,7 @@ $NumPad5::
 			break
 		else	
 		{
-			PixelGetColor, color1, 1175, 868
+			PixelGetColor, color1, 691, 1010
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100
@@ -105,7 +106,7 @@ $NumPad7::
 			break
 		else	
 		{
-			PixelGetColor, color1, 1175, 868
+			PixelGetColor, color1, 691, 1010
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100

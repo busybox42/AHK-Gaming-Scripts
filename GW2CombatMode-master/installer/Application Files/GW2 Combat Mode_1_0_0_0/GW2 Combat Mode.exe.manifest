@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="GW2 Combat Mode.exe" version="1.0.0.0" publicKeyToken="0a819c0acf584a97" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GW2 Combat Mode" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="GW2 Combat Mode.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GW2 Combat Mode.exe" size="80896">
+      <assemblyIdentity name="GW2 Combat Mode" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>6adgVsHZK9WhvnzoTAb8m1KqCsA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MouseKeyboardLibrary.dll" size="13312">
+      <assemblyIdentity name="MouseKeyboardLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>PyxDQCfA1aCVec0vm9e+AHcSMTI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Crosshairs\LargeCircleBlue.png" size="2698">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eg6oRwa9qdewbNr1gI3mAwNcAvg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCircleGreen.png" size="2698">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rcOmhwTgkR9bV2xqJPtHmZcR3UI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCircleRed.png" size="2689">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RlgsOX7uunygVbyN8oQHPHmgXmQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCrossBlack.png" size="1023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TaNEbehMHnBmutvGSbDBqE0Zqfk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCrossBlue.png" size="1023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/U15UGJtyRq+sNSO3BJ4NGawyWs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCrossGreen.png" size="1023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MMeM6eskh6sTdOvM6iwUFawAB9A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCrossOrange.png" size="1023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MFDOgZGARXmzmHPGKHESZ0cIX5w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCrossPurple.png" size="1023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xPssorIxhdSeeHLYFhkipBlSAFA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCrossRed.png" size="1023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jbBE7BvkkqlJpqPuQ5eYAgDCC1Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCrossWhite.png" size="1023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>han0ot0yMqG4mx8OdbHjdx5pcJc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeCrossYellow.png" size="1023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zcIPJFkgjbpQ9vR8tgOBbO45Q8E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeTriBlack.png" size="1183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>78jowN6oWt6xzuWPVjVeVb/2uJg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeTriBlue.png" size="1183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JDy76TxLvEWtRSiZRqRJp7Xj4XQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeTriGreen.png" size="1183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>oSQrbQIZyKa7XfZlVMbZSJ3MkeE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeTriOrange.png" size="1183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uRdS7u7OPdmtnpAn3fU0IJi8qFg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeTriPurple.png" size="1183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Tp4Ts1CYxr5ND2RbgsJj7AMbFcU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeTriRed.png" size="1183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8kM1M8YSaHB+3P1cx3/ZtIfILY0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeTriWhite.png" size="1183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LF7aHqMkipB1QLIs6SejkSryxlo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\LargeTriYellow.png" size="1183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ocWrYJ7VkBDgVPrqEZuTP3whGek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\MediumCrossBlack.png" size="1007">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KN+34OvHdL1dkBTlboFQKZph4mA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\MediumCrossGreen.png" size="1007">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1Q8yCHYlGaeuLoVAcfmldKG05xw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\MediumCrossRed.png" size="1007">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iDWdZhOQpEkp9RLQW0Yn07zGMEM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crosshairs\ring.png" size="2611">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TB0bYUYJ0XWsJx7JVfNT+imH6cg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GW2 Combat Mode.exe.config" size="198">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nbAIhkrxMB0zLKPVpUbj7XINkuQ=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Bob-DVL\Bob" issuerKeyHash="6b0ac74b7d1bdc9fdef73ce7dff4a0634e1976dc" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>M2yiBUwjFv/+cu6JBc5ZwuiVXFc=</DigestValue></Reference></SignedInfo><SignatureValue>iu3etgvGGQ5tOv6NU8LqZZBmoDmV9mAxesc8IHpgs93gJbIsdGakPDUxoKq7SaxDfdBNYkzGSKqA9AFNzFZ+nwKfGi3nZtH9upcViKIQMSmVZwwMxPpv50UzTsnDkosRfe9CDthV5vcfsDH1XnSrlTAuHtGb3h7c32d96DxUVAU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wD93pKMRCPmrgoe9rlq40YfTigTqPYN8lamnL9vtA30TW+Nhc8yHzkm8VYcZILpASfXDYaNMHnJWkvJMOyiCRdta5G8mbCjSeR+8RzjS1dIFkC46xX3wzpYrxTGclxjdnNjbpfWJivslAM9ApyGm3pv/55l4sEph/UmGcXhcz5c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="575c95e8c259ce0589ee72feff16234c05a26c33" Description="" Url=""><as:assemblyIdentity name="GW2 Combat Mode.exe" version="1.0.0.0" publicKeyToken="0a819c0acf584a97" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Bob-DVL\Bob</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>NVZJ6OiWawr2Vsg8qz6hDuHHxak=</DigestValue></Reference></SignedInfo><SignatureValue>YNf+aiogytDYtZumzr0HrLxk/7IOY9sDsdahCcEgfpZUhrOyResUiJtWzZynNgEaQOr5HhkJTahCiLRf8tlUr9RM7uszoSyPZdtN7tkjFQk4fBgbVRjrVAiRJXlgMAqUovCpIrCSemoV9GNU8o7KNd8yUenZjUH4TfU/hAEyoZM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wD93pKMRCPmrgoe9rlq40YfTigTqPYN8lamnL9vtA30TW+Nhc8yHzkm8VYcZILpASfXDYaNMHnJWkvJMOyiCRdta5G8mbCjSeR+8RzjS1dIFkC46xX3wzpYrxTGclxjdnNjbpfWJivslAM9ApyGm3pv/55l4sEph/UmGcXhcz5c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQEt4BpHAVwahFYgM7nowDczANBgkqhkiG9w0BAQUFADAhMR8wHQYDVQQDHhYAQgBvAGIALQBEAFYATABcAEIAbwBiMB4XDTEyMTIxNTAyNTU1NloXDTEzMTIxNTA4NTU1NlowITEfMB0GA1UEAx4WAEIAbwBiAC0ARABWAEwAXABCAG8AYjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwD93pKMRCPmrgoe9rlq40YfTigTqPYN8lamnL9vtA30TW+Nhc8yHzkm8VYcZILpASfXDYaNMHnJWkvJMOyiCRdta5G8mbCjSeR+8RzjS1dIFkC46xX3wzpYrxTGclxjdnNjbpfWJivslAM9ApyGm3pv/55l4sEph/UmGcXhcz5cCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAsxelRspxUZzMQqqacQpvI7fjnj4nydOTIHlA+o8oDDWvrDWU53Ixz8/dFF7LnmY6gu2YGpNNvct2HWfu5hmW4GP75Q3QMCxNDJsDX80pFFXeUJjyxVdKpU+dqwGflzmKFYZ092fJOQ4zcgUTCBo0g6vri4b2S/41/Qx/50Sd54w==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

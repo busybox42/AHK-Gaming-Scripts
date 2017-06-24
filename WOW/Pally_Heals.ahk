@@ -1,6 +1,7 @@
 
 Pause::Pause
 Xbutton2::Reload
+Xbutton1::ExitApp
 #MaxThreads 1
 #ifWinActive World of Warcraft 
 {	
@@ -50,7 +51,6 @@ Xbutton2::Reload
 			}			
 			Send {Click Right}
 			Sleep 500
-			SendInput 2	
 		}
 	}
 	Return	
