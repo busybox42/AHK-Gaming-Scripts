@@ -26,7 +26,34 @@ $NumPad4::
 					Send, =
 				}
 			}
-
+			; Shield Wall
+			PixelGetColor, color2,515, 857
+			ifNotEqual, color2, 0x000000	
+			{
+				sleep 10
+				Send, 6
+			}
+			; Last Stand
+			PixelGetColor, color3,515, 905
+			ifNotEqual, color3, 0x000000	
+			{
+				sleep 10
+				Send, 4
+			}
+			; Rallying Cry
+			PixelGetColor, color4,515, 880
+			ifNotEqual, color4, 0x000000	
+			{
+				sleep 10
+				Send, 5
+			}
+			; StoneForm
+			PixelGetColor, color5,515, 925
+			ifNotEqual, color5, 0x000000	
+			{
+				sleep 10
+				Send, 3
+			}			
 			SendInput {NumPad4}
 			sleep 50
 		}
@@ -54,27 +81,5 @@ $NumPad5::
 		}
 	}
 	Return
-$NumPad7::
-	Loop 
-	{
-		if not GetKeyState("NumPad7", "P")
-			break
-		else	
-		{	
-			; Interupt
-			PixelGetColor, color1,720, 965
-			ifNotEqual, color1, 0x000000	
-			{
-				sleep 10
-				ifNotEqual, color1, 0x000000
-				{
-					Send, =
-				}
-			}
-			SendInput {NumPad7}
-			RandSleep(100,400)
-		}
-	}
-	Return	
 }	
 

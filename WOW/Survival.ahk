@@ -16,7 +16,8 @@ $NumPad4::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -25,18 +26,23 @@ $NumPad4::
 					Send, =
 				}
 			}
-			PixelGetColor, color2, 681, 955
-			ifNotEqual, color2, 0x000000	
+			; Serpent Sting
+			PixelGetColor, color2, 515, 1005
+			ifEqual, color2, 0x000000	
 			{
-				sleep 10
-				SendInput {NumPad7}
-				sleep 1000
+				SendInput {NumPad8}
 			}
-			else
-			{
-				SendInput {NumPad4}
-			}
-			RandSleep(100,400)
+			Send, 8
+			SendInput {NumPad4}
+			SendInput {NumPad9}
+			SendInput {NumPad4}
+			SendInput {NumPad0}
+			SendInput {NumPad4}
+			SendInput {NumPad5}
+			SendInput {NumPad4}
+			SendInput {NumpadSub}
+			SendInput {NumpadAdd}
+			RandSleep(100,300)
 		}
 	}
 	Return
@@ -47,7 +53,8 @@ $NumPad5::
 			break
 		else	
 		{	
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -56,18 +63,18 @@ $NumPad5::
 					Send, =
 				}
 			}
-			PixelGetColor, color2, 681, 955
-			ifNotEqual, color2, 0x000000	
+			; Serpent Sting
+			PixelGetColor, color2, 515, 1005
+			ifEqual, color2, 0x000000	
 			{
-				sleep 10
-				SendInput {NumPad7}
-				sleep 1000
+				SendInput {NumPad8}
 			}
-			else
-			{
-				SendInput {NumPad5}
-			}
-			RandSleep(100,400)
+			SendInput {NumPad9}
+			SendInput {NumPad0}
+			SendInput {NumPad5}
+			SendInput {NumpadSub}
+			SendInput {NumpadAdd}
+			RandSleep(100,300)
 		}
 	}
 	Return	

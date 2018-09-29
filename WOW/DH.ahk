@@ -12,7 +12,8 @@ $NumPad4::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -21,7 +22,8 @@ $NumPad4::
 					Send, =
 				}
 			}
-			PixelGetColor, color2, 685, 950
+			; Soul Cleave
+			PixelGetColor, color2, 515, 1006
 			ifNotEqual, color2, 0x000000	
 			{
 				SendInput {NumPad5}
@@ -42,7 +44,8 @@ $NumPad5::
 		else	
 		{	
 			SendInput {NumPad5}	
-			PixelGetColor, color1, 691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10

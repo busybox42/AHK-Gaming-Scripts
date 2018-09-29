@@ -12,7 +12,8 @@ $NumPad1::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -21,7 +22,8 @@ $NumPad1::
 					Send, =
 				}
 			}
-			PixelGetColor, color2,578, 1007
+			; Hot Streak
+			PixelGetColor, color2,515, 1005
 			ifNotEqual, color2, 0x000000	
 			{
 				sleep 50
@@ -30,7 +32,8 @@ $NumPad1::
 				SendInput {Click}
 			}
 			else {
-				PixelGetColor, color3,581, 950
+				; Fireblast
+				PixelGetColor, color3,515, 950
 				ifNotEqual, color3, 0x000000	
 				{
 					SendInput {NumPad9}
@@ -49,7 +52,8 @@ $NumPad2::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -58,14 +62,16 @@ $NumPad2::
 					Send, =
 				}
 			}
-			PixelGetColor, color2,578, 1007
+			; Hot Streak
+			PixelGetColor, color2,515, 1005
 			ifNotEqual, color2, 0x000000	
 			{
 				sleep 50
 				SendInput {NumPad2}
 			}
 			else {
-				PixelGetColor, color3,581, 950
+				; Fireblast
+				PixelGetColor, color3,515, 95
 				ifNotEqual, color3, 0x000000	
 				{
 					SendInput {NumPad9}
@@ -84,7 +90,8 @@ $NumPad4::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -93,14 +100,16 @@ $NumPad4::
 					Send, =
 				}
 			}
-			PixelGetColor, color2,578, 1007
+			; Hot Streak
+			PixelGetColor, color2,515, 1005
 			ifNotEqual, color2, 0x000000	
 			{
 				sleep 50
 				SendInput {NumPad2}
 			}
 			else {
-				PixelGetColor, color3,581, 950
+				; Fireblast
+				PixelGetColor, color3,515, 95
 				ifNotEqual, color3, 0x000000	
 				{
 					SendInput {NumPad9}
@@ -118,7 +127,8 @@ $NumPad5::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -127,14 +137,16 @@ $NumPad5::
 					Send, =
 				}
 			}
-			PixelGetColor, color2,578, 1007
+			; Hot Streak
+			PixelGetColor, color2,515, 1005
 			ifNotEqual, color2, 0x000000	
 			{
 				sleep 50
 				SendInput {NumPad2}
 			}
 			else {
-				PixelGetColor, color3,581, 950
+				; Fireblast
+				PixelGetColor, color3,515, 95
 				ifNotEqual, color3, 0x000000	
 				{
 					SendInput {NumPad9}
@@ -152,7 +164,8 @@ $NumPad7::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -161,14 +174,16 @@ $NumPad7::
 					Send, =
 				}
 			}
-			PixelGetColor, color2,578, 1007
+			; Hot Streak
+			PixelGetColor, color2,515, 1005
 			ifNotEqual, color2, 0x000000	
 			{
 				sleep 50
 				SendInput {NumPad2}
 			}
 			else {
-				PixelGetColor, color3,581, 950
+				; Fireblast
+				PixelGetColor, color3,515, 95
 				ifNotEqual, color3, 0x000000	
 				{
 					SendInput {NumPad9}

@@ -15,7 +15,8 @@ Xbutton1::ExitApp
 			break
 		else	
 		{
-			PixelGetColor, color1, 689, 1009
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100
@@ -40,7 +41,8 @@ Xbutton1::ExitApp
 			break
 		else	
 		{
-			PixelGetColor, color1, 689, 1009
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100
@@ -62,7 +64,8 @@ $NumPad4::
 			break
 		else	
 		{
-			PixelGetColor, color1, 691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100
@@ -84,7 +87,8 @@ $NumPad5::
 			break
 		else	
 		{
-			PixelGetColor, color1, 691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100
@@ -106,7 +110,8 @@ $NumPad7::
 			break
 		else	
 		{
-			PixelGetColor, color1, 691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 100

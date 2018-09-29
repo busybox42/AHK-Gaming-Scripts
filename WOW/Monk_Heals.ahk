@@ -4,18 +4,64 @@ Xbutton2::Reload
 Xbutton1::ExitApp
 #MaxThreads 1
 #ifWinActive World of Warcraft 
-{
-RandSleep(x,y) { ;creates a variable with an X and Y
-Random, rand, %x%, %y% ;Uses the Random function to generate x and y
-Sleep %rand% ;makes the %rand% value the sleep time
-}	
+{	
+~$LButton::
+	Loop
+	{
+		MouseGetPos, VarX, VarY
+		If (VarX<777) or (VarX>1162) or (VarY<703) or (VarY>923)
+			Return
+		if not GetKeyState("LButton", "P")
+			break
+		else	
+		{
+			; Interupt
+			PixelGetColor, color1,720, 965
+			ifNotEqual, color1, 0x000000	
+			{
+				sleep 10
+				ifNotEqual, color1, 0x000000
+				{
+					Send, =
+				}
+			}			
+			Send {Click}
+			Sleep 500		
+		}
+	}
+	Return
+~$RButton::
+	Loop 
+	{
+		MouseGetPos, VarX, VarY
+		If (VarX<777) or (VarX>1162) or (VarY<703) or (VarY>923)
+			Return
+		if not GetKeyState("RButton", "P")
+			break
+		else		
+		{	
+			; Interupt
+			PixelGetColor, color1,720, 965
+			ifNotEqual, color1, 0x000000	
+			{
+				sleep 10
+				ifNotEqual, color1, 0x000000
+				{
+					Send, =
+				}
+			}	
+			Send {Click Right}
+			Sleep 500
+		}
+	}
+	Return
 $NumPad4::
 	Loop 
 	{
 		if not GetKeyState("NumPad4", "P")
 			break
 		else	
-		{			
+		{
 			; Interupt
 			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
@@ -25,56 +71,10 @@ $NumPad4::
 				{
 					Send, =
 				}
-			}
-
+			}			
 			SendInput {NumPad4}
-			sleep 50
+			Sleep 100
 		}
 	}
 	Return
-$NumPad5::
-	Loop 
-	{
-		if not GetKeyState("NumPad5", "P")
-			break
-		else	
-		{	
-			; Interupt
-			PixelGetColor, color1,720, 965
-			ifNotEqual, color1, 0x000000	
-			{
-				sleep 10
-				ifNotEqual, color1, 0x000000
-				{
-					Send, =
-				}
-			}
-			SendInput {NumPad5}
-			RandSleep(100,400)
-		}
-	}
-	Return
-$NumPad7::
-	Loop 
-	{
-		if not GetKeyState("NumPad7", "P")
-			break
-		else	
-		{	
-			; Interupt
-			PixelGetColor, color1,720, 965
-			ifNotEqual, color1, 0x000000	
-			{
-				sleep 10
-				ifNotEqual, color1, 0x000000
-				{
-					Send, =
-				}
-			}
-			SendInput {NumPad7}
-			RandSleep(100,400)
-		}
-	}
-	Return	
-}	
-
+}

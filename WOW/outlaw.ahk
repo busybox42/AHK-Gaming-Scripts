@@ -11,8 +11,9 @@ $NumPad4::
 		if not GetKeyState("NumPad4", "P")
 			break
 		else	
-		{			
-			PixelGetColor, color1,691, 1010
+		{	
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -21,16 +22,19 @@ $NumPad4::
 					Send, =
 				}
 			}
-			PixelGetColor, color2, 570, 950
+			; Less than 5 combo points
+			PixelGetColor, color2, 515, 933
 			ifEqual, color2, 0x000000	
 			{
-				PixelGetColor, color5, 566, 905
+				; Marked for Death if 0 combo points
+				PixelGetColor, color5, 515, 900
 				ifNotEqual, color5, 0x000000
 				{
 					SendInput {Numpad8}
 				}
 				SendInput {NumPad4}
-				PixelGetColor, color3, 685, 950
+				; Pistol Shot if we have Oppertunity
+				PixelGetColor, color3, 515, 867
 				ifNotEqual, color3, 0x000000
 				{
 					SendInput {NumPad9}
@@ -38,9 +42,17 @@ $NumPad4::
 			}
 			else
 			{
-				PixelGetColor, color3, 565, 1003
+				; Roll the bones if Ruthless Precision or Grand Melee not up
+				PixelGetColor, color3, 515, 1005
 				ifNotEqual, color3, 0x000000
 				{
+					; If Ruthless Precision is active finish with Between the Eyes else Dispatch
+					PixelGetColor, color4, 515, 975	
+					ifNotEqual, color4, 0x000000
+					{
+						Sleep 100
+						SendInput {NumpadAdd}
+					}
 					SendInput {NumpadSub}
 				}
 				else
@@ -48,7 +60,8 @@ $NumPad4::
 					SendInput {NumPad0}
 				}
 			}
-			PixelGetColor, color4, 626, 975
+			; Use Crimson Vial if below 60% health
+			PixelGetColor, color4, 715, 965
 			ifNotEqual, color4, 0x000000
 			{
 				Send, -
@@ -65,7 +78,8 @@ $NumPad5::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -74,16 +88,19 @@ $NumPad5::
 					Send, =
 				}
 			}
-			PixelGetColor, color2, 570, 950
+			; Less than 5 combo points
+			PixelGetColor, color2, 515, 933
 			ifEqual, color2, 0x000000	
 			{
-				PixelGetColor, color5, 566, 905
+				; Marked for Death if 0 combo points
+				PixelGetColor, color5, 515, 900
 				ifNotEqual, color5, 0x000000
 				{
 					SendInput {Numpad8}
-				}			
+				}
 				SendInput {NumPad5}
-				PixelGetColor, color3, 685, 950
+				; Pistol Shot if we have Oppertunity
+				PixelGetColor, color3, 515, 867
 				ifNotEqual, color3, 0x000000
 				{
 					SendInput {NumPad9}
@@ -91,9 +108,17 @@ $NumPad5::
 			}
 			else
 			{
-				PixelGetColor, color3, 565, 1003
+				; Roll the bones if Ruthless Precision or Grand Melee not up
+				PixelGetColor, color3, 515, 1005
 				ifNotEqual, color3, 0x000000
 				{
+					; If Ruthless Precision is active finish with Between the Eyes else Dispatch
+					PixelGetColor, color4, 515, 975	
+					ifNotEqual, color4, 0x000000
+					{
+						Sleep 100
+						SendInput {NumpadAdd}
+					}
 					SendInput {NumpadSub}
 				}
 				else
@@ -101,7 +126,8 @@ $NumPad5::
 					SendInput {NumPad0}
 				}
 			}
-			PixelGetColor, color4, 626, 975
+			; Use Crimson Vial if below 60% health
+			PixelGetColor, color4, 715, 965
 			ifNotEqual, color4, 0x000000
 			{
 				Send, -
@@ -117,8 +143,9 @@ $NumPad7::
 		if not GetKeyState("NumPad7", "P")
 			break
 		else	
-		{			
-			PixelGetColor, color1,691, 1010
+		{	
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -127,16 +154,19 @@ $NumPad7::
 					Send, =
 				}
 			}
-			PixelGetColor, color2, 570, 950
+			; Less than 5 combo points
+			PixelGetColor, color2, 515, 933
 			ifEqual, color2, 0x000000	
 			{
-				PixelGetColor, color5, 566, 905
+				; Marked for Death if 0 combo points
+				PixelGetColor, color5, 515, 900
 				ifNotEqual, color5, 0x000000
 				{
 					SendInput {Numpad8}
-				}			
+				}
 				SendInput {NumPad4}
-				PixelGetColor, color3, 685, 950
+				; Pistol Shot if we have Oppertunity
+				PixelGetColor, color3, 515, 867
 				ifNotEqual, color3, 0x000000
 				{
 					SendInput {NumPad9}
@@ -144,18 +174,27 @@ $NumPad7::
 			}
 			else
 			{
+				; If Ruthless Precision is active finish with Between the Eyes else Dispatch
+				PixelGetColor, color4, 515, 975	
+				ifNotEqual, color4, 0x000000
+				{
+					Sleep 100
+					SendInput {NumpadAdd}
+				}
 				SendInput {NumpadSub}
+
 			}
-			PixelGetColor, color4, 626, 975
+			; Use Crimson Vial if below 60% health
+			PixelGetColor, color4, 715, 965
 			ifNotEqual, color4, 0x000000
 			{
 				Send, -
-			}			
+			}
 			Sleep 100
 		}
 	}
 	Return
-	
+
 $NumPad8::
 	Loop 
 	{
@@ -163,7 +202,8 @@ $NumPad8::
 			break
 		else	
 		{			
-			PixelGetColor, color1,691, 1010
+			; Interupt
+			PixelGetColor, color1,720, 965
 			ifNotEqual, color1, 0x000000	
 			{
 				sleep 10
@@ -172,16 +212,19 @@ $NumPad8::
 					Send, =
 				}
 			}
-			PixelGetColor, color2, 570, 950
+			; Less than 5 combo points
+			PixelGetColor, color2, 515, 933
 			ifEqual, color2, 0x000000	
 			{
-				PixelGetColor, color5, 566, 905
+				; Marked for Death if 0 combo points
+				PixelGetColor, color5, 515, 900
 				ifNotEqual, color5, 0x000000
 				{
 					SendInput {Numpad8}
-				}			
+				}
 				SendInput {NumPad5}
-				PixelGetColor, color3, 685, 950
+				; Pistol Shot if we have Oppertunity
+				PixelGetColor, color3, 515, 867
 				ifNotEqual, color3, 0x000000
 				{
 					SendInput {NumPad9}
@@ -189,19 +232,29 @@ $NumPad8::
 			}
 			else
 			{
+				; If Ruthless Precision is active finish with Between the Eyes else Dispatch
+				PixelGetColor, color4, 515, 975	
+				ifNotEqual, color4, 0x000000
+				{
+					Sleep 100
+					SendInput {NumpadAdd}
+				}
 				SendInput {NumpadSub}
 			}
-			PixelGetColor, color4, 626, 975
+			; Use Crimson Vial if below 60% health
+			PixelGetColor, color4, 715, 965
 			ifNotEqual, color4, 0x000000
 			{
 				Send, -
-			}			
+			}
 			Sleep 100
 		}
 	}
-	Return	
-
-
+	Return
+	$NumPad3::
+		SendInput {NumPad3}
+		Sleep 5
+		SendInput {Click}	
+	Return
 }
-
 
